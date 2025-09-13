@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: ["http://localhost:3000", "https://real-time-messaging-app-72u5.vercel.app/"],
+    origin: ["http://localhost:3000", "https://real-time-messaging-app-72u5.vercel.app"],
     methods: ["GET", "POST"],
     credentials: true
   },
@@ -22,7 +22,7 @@ const io = socketIo(server, {
 app.use(cors({
   origin: [
     "http://localhost:3000", 
-    "https://real-time-messaging-app-72u5.vercel.app/"
+    "https://real-time-messaging-app-72u5.vercel.app"
   ],
   credentials: true
 }))
